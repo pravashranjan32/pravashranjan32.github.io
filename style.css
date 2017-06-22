@@ -1,8 +1,29 @@
 .opening-page{
-    background: url('table.jpeg') ;
-    background-size: 100% 100vh;
+    background: url('table_sm.jpg') no-repeat  ;
+    background-size: 100% 125vh;
     width:100%;
-    height: 100vh;
+    height: 125vh;
+}
+.jumbo{
+   position: absolute;
+    top:100px;
+    width:;
+    left:400px;
+        
+}
+.jumbo .header{
+    position: absolute;
+    font-size: 50px;
+    border-radius: 50px;
+    height:200px;
+    background: #E81A39;
+    color: aqua;
+   font-family: 'Kaushan Script', cursive;
+
+}
+blockquote{
+    
+font-family: 'Pacifico', cursive;
 }
 .mac{
    
@@ -10,29 +31,55 @@
     height: 500px;
     position: absolute;
     left:35%;
-    top:10%;
+    top:40%;
+}
+.notes{
+   
+    width:300px;
+    height: 300px;
+    position: absolute;
+    left:10%;
+    top:55%;
+}
+.text{
+    margin:0px;
+    padding:0 auto;
+    width:300px;
+    font-size: 30px;
+    font-family: 'Permanent Marker', cursive;
+    position: absolute;
+    top:70%;
+    left:14.5%;
+    transform: rotate(5deg);
 }
 .pencil{
-    top:60%;
-    left:10%;
+    top:100%;
+    left:40%;
     width:300px;
     position: absolute;
+    filter:blur(3px);
+}
+.paper{
+    position: absolute;
+    top:100%;
+    left:30%;
 }
 .mouse{
     
     width:200px;
     height: 200px;
     position: absolute;
-    left:70%;
-    top:40%;
+    left:75%;
+    top:75%;
     transform: rotate(-10deg)
 }
 .pen{
    
-    top:60%;
-    left:30%;
+    top:62%;
+    left:6%;
     height: 200px;
     position: absolute;
+    filter:blur(0px);
 }
 .scroll{
     position: relative;

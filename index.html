@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Index</title>
 
     <!-- Bootstrap -->
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link href="style.css" rel="stylesheet">
+      <!-- FONTS  -->
+      <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lobster|Pacifico" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,11 +25,16 @@
   <body>
       <div class="opening-page">
       <img id="layer-1" class="mac" src="mac.png">
+           <img id="layer-12" class="notes" src="notes.png">
+          <p id="layer-13" class="text">Welcome to<br> our <br>Workspace</p>
       <img id="layer-2" class="mouse" src="mouse.png">
       <img id="layer-3" class="pen" src="pen.png">
       <img id="layer-4" class="pencil" src="pencil.png">
-
-      
+      <img id="layer-41" class="paper" src="paper.png">  
+      <div id="cont-header" class="container jumbo"><div class="jumbotron header">Welcome to PLETSITES
+          <blockquote>home to a plethora of websites</blockquote></div>
+          
+      </div>
       </div>
       <div class="scroll"></div>
 
@@ -35,26 +43,48 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      
+      <script src="nice-scroll/jquery.nicescroll-3.7.3/jquery.nicescroll.min.js"></script>
+      <script src="nice-scroll/jquery.nicescroll-3.7.3/jquery.nicescroll.iframehelper.min.js"></script>
+      
+      
+      
     <script>
       var u = $(".mac").position();
         var v = $(".mouse").position();
         var w = $(".pen").position();
         var x = $(".pencil").position();
-    
+         var x1 = $(".paper").position();
+        var ch=$(".jumbo").position();
       function parallax(){
           var layer_1=document.getElementById('layer-1');
            var layer_2=document.getElementById('layer-2');
            var layer_3=document.getElementById('layer-3');
            var layer_4=document.getElementById('layer-4');
+          var layer_41=document.getElementById('layer-41');
+          var cont_header=document.getElementById('cont-header');
           
-          layer_1.style.top=u.top -(window.pageYOffset/3)+'px';
-           layer_2.style.top=v.top -(window.pageYOffset/5)+'px';
-           layer_3.style.top=w.top -(window.pageYOffset/6)+'px';
-           layer_4.style.top=x.top -(window.pageYOffset/7)+'px';
+       //   layer_1.style.top=u.top -(window.pageYOffset/7)+'px';
+           layer_2.style.top=v.top -(window.pageYOffset/4)+'px';
+           layer_3.style.top=w.top -(window.pageYOffset/3)+'px';
+           layer_4.style.top=x.top -(window.pageYOffset/1)+'px';
+           layer_4.style.left=x.left +(window.pageYOffset/3)+'px';
+        //  layer_3.style.left=w.left -(window.pageYOffset/5)+'px';
+           layer_41.style.top=x1.top -(window.pageYOffset/1.5)+'px';
+          cont_header.style.top=ch.top +(window.pageYOffset/7)+'px';
       }
         window.addEventListener("scroll",parallax,false);
+        
+        $(window).scroll(function() {
+  var theta = $(window).scrollTop();
+  $('.pencil').css({ transform: 'rotate(' + theta/80 + 'rad)' });
+ 
+});
       
-      
+   $(document).ready(function() {  
+    $("html").niceScroll();
+});
+   
       
       
     </script>  
