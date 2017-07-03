@@ -1,8 +1,14 @@
+body{
+    min-width: 450px;
+}
+
 .opening-page{
     background: url('table_sm.jpg') no-repeat  ;
     background-size: 100% 125vh;
     width:100%;
     height: 125vh;
+    min-height: 320px;
+    
 }
 .jumbo{
    position: absolute;
@@ -85,4 +91,193 @@ font-family: 'Pacifico', cursive;
     position: relative;
     width:100%;
     height: 500px;
+}
+.navbar{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+    background: grey;
+    border-radius:0;
+    position: fixed;
+    z-index: 20;
+    
+}
+.ham-menu img{
+  width:40px ;
+    float:right;
+    display: none;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+.navbar ul li{
+    list-style: none;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.navbar ul{
+    height: auto;
+    float: right;
+   
+}
+.navbar .logo img{
+    width:35px;
+    margin-left: 5px;
+}
+.navbar ul li a:hover{
+    color:lightgreen;
+}
+
+
+/* Responsive style */
+
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: lightblue;
+    }
+    .opening-page{
+    background: url('table_sm.jpg') no-repeat  ;
+    background-size: 100% 125vh;
+    width:100%;
+    height:100vh;
+    
+}
+    .navbar ul{
+    display:none; 
+    transition: display 3s ease-in-out;
+    
+    
+     }
+    .navbar ul.open{
+        display:block;
+         transition: display 3s ease;
+        
+    }
+    .navbar ul li{
+        width: 100%;
+        border-bottom: 1px solid white;
+        
+    }
+    .navbar ul li a{
+        display: 
+    }
+    .ham-menu img{
+        display:block;
+        margin-right: 5px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    .navbar .logo img{
+        margin-left: 30px;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .jumbo{
+    position: absolute;
+    top:50px;
+    width:;
+    left:60px;
+        
+}
+.jumbo .header{
+    position: absolute;
+    font-size: 30px;
+    border-radius: 15px;
+    height:;
+    width:300px;
+    background: #E81A39;
+    color: aqua;
+    font-family: 'Kaushan Script', cursive;
+
+}
+blockquote{
+    
+font-family: 'Pacifico', cursive;
+}
+.mac{
+   
+    width:200px;
+    height: 200px;
+    position: absolute;
+    left:130px;
+    top:350px;
+}
+.notes{
+   
+    width:100px;
+    height: 100px;
+    position: absolute;
+    left:10%;
+    top:55%;
+}
+.text{
+    margin:0px;
+    padding:0 auto;
+    width:300px;
+    font-size: 10px;
+    font-family: 'Permanent Marker', cursive;
+    position: absolute;
+    top:375px;
+    left:14.5%;
+    transform: rotate(5deg);
+}
+.pencil{
+    top:100%;
+    left:40%;
+    width:200px;
+    position: absolute;
+    filter:blur(1px);
+}
+.paper{
+    position: absolute;
+    top:100%;
+    left:35%;
+    width:100px;
+}
+.mouse{
+    
+    width:90px;
+    height: 90px;
+    position: absolute;
+    top:0px;
+    left:75%;
+   
+   
+    transform: rotate(-10deg)
+}
+.pen{
+   
+    top:%;
+    left:4%;
+    height: 80px;
+    position: absolute;
+    filter:blur(0px);
+}
+.scroll{
+    position: relative;
+    width:100%;
+    height: 500px;
+}
+    
+    
+    
 }

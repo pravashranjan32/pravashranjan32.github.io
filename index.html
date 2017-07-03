@@ -23,6 +23,19 @@
     <![endif]-->
   </head>
   <body>
+      <nav class="navbar">
+        <a class="logo"><img src="logo.png" alt="Logo"></a>
+        <a class="ham-menu"><img src="ham_icon.png"></a>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Workspace</a></li>
+          
+          </ul>
+      
+      
+      </nav>
       <div class="opening-page">
       <img id="layer-1" class="mac" src="mac.png">
            <img id="layer-12" class="notes" src="notes.png">
@@ -83,10 +96,19 @@
       
    $(document).ready(function() {  
     $("html").niceScroll();
+         
+      
 });
+        $(document).ready(function(){
+            $(".ham-menu").on("click",function(){
+                $(".navbar ul").toggleClass("open");
+                
+                
+            });
+            
+        });
    
-      
-      
+   
     </script>  
       
   </body>
